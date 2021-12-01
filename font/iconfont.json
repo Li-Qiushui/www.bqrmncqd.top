@@ -6,32 +6,18 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "26702",
-      "name": "qq",
-      "font_class": "qq",
-      "unicode": "f003c",
-      "unicode_decimal": 983100
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "f0179",
+      "unicode_decimal": 983417
     },
     {
-      "icon_id": "577368",
-      "name": "淘宝",
-      "font_class": "taobao",
-      "unicode": "e755",
-      "unicode_decimal": 59221
-    },
-    {
-      "icon_id": "840781",
-      "name": "微信",
-      "font_class": "weixin",
-      "unicode": "e660",
-      "unicode_decimal": 58976
-    },
-    {
-      "icon_id": "4188632",
-      "name": "AK-SR_京东",
-      "font_class": "sr_jingdong",
-      "unicode": "e5b1",
-      "unicode_decimal": 58801
+      "icon_id": "12473809",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
     }
   ]
 }
