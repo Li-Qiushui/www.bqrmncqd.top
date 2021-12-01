@@ -2,7 +2,7 @@ $(function(){
 	var i = 0;
 	function time(){
 		i++;
-		var img_left = $(".img img").width()*i;
+		var img_left = $(".rot").width()*i;
 		var line_left =120*i;
 		$(".rot .img").css("left",-img_left);
 		$(".rot_tab .li_line").css("left",line_left);
