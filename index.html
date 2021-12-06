@@ -4,36 +4,55 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<style type="text/css">
-			body{
-				width: 100%;
-				height: 100vh;
-				overflow: hidden;
-				background-image: url(s/p1.jpg);
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<audio src="s/a1.mp3" id="vd"  >
-			当前浏览器不支持audio
-		</audio>
-		<script type="text/javascript">
-			function toggleSound() {
-			            var music = document.getElementById("vd");//获取ID  
-			                console.log(music);
-			                console.log(music.paused);
-			            if (music.paused) { //判读是否播放  
-			                music.paused=false;
-			                music.play(); //没有就播放 
-			            }  
-			            
-			        }
-			
-			setInterval("toggleSound()",1);
-
-		</script>
+		<div class="main">
+			<div class="logo">
+				<img src="images/logo.png" >
+			</div>
+			<div class="input_w">
+				<div class="input">
+					<img src="images/icon-user.png" >
+					<input type="text" id="id" placeholder="输入账号" />	
+				</div>
+				<div class="input">
+					<img src="images/icon-lock.png" >
+					<input type="password" id="pwd" placeholder="输入密码" />
+				</div>
+				<div class="forget">
+					<a href="#" class="forget_pwd">忘记密码</a>
+				</div>
+			</div>
+			<div class="btn_w">
+				<div class="btn btn_login">
+					<button type="submit">立即登入</button>
+				</div>
+				<div class="btn btn_reg">
+					<button type="button">注册账户</button>
+				</div>
+				<div class="help_w">
+					<a href="#" class="help">需要帮助</a>
+				</div>
+			</div>
+			<div class="link_w">
+				<div class="link_t">第三方登录</div>
+				<div class="link_b">
+					<div class="link">
+						<img src="images/icon-qq.png" >
+						<span>QQ</span>
+					</div>
+					<div class="link">
+						<img src="images/icon-wx.png" >
+						<span>微信</span>
+					</div>
+					<div class="link">
+						<img src="images/icon-wb.png" >
+						<span>微博</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
