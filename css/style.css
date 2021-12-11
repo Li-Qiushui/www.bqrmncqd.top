@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	transition:.3s;
+}
+.main{
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-color: #177cb0;
+}
+.nav{
+	position: absolute;
+	right: 0px;
+}
+.tab_ul{
+	width: 400px;
+	display: flex;
+}
+.tab_ul .tab{
+	cursor: pointer;
+	width: 100px;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+.tab_ul .bgc{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	left: -100px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: inset 0 0 20px #44CEF6;
+	opacity: 0;
+}
+.main .nav .btns{
+	position: absolute;
+	left: -25px;
+	z-index: 999;
+}
+.main .nav .btns div{
+	width: 25px;
+	height: 2px;
+	margin: 5px 0;
+	background-color: #FFFFFF;
+	opacity: 0;
+}
+
+.title{
+	max-width: 1400px;
+	min-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title_r{
+	font-family: "agency fb";
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.title_r h1{
+	width: 800px;
+	height: 200px;
+	position: relative;
+	font-size: 125px;
+	overflow: hidden;
+	color: #FFFFFF;
+}
+.title_r h1 i:first-child{
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	animation: txt1 .7s linear forwards;
+}
+.title_r h1 i:last-child{
+	position: absolute;
+	top: 0px;
+	left: 500px;
+	animation: txt2 .7s ease forwards;
+}
+@keyframes txt1{
+	50%{top: 200px;left: 100px;}
+	100%{top: 0;left: 0;}
+}
+@keyframes txt2{
+	100%{top: 0;left: 300px;}
+}
+.main .nav .btns .btn1{
+	top: 7px;
+	transform: rotateZ(45deg) translate(5px,5px);
+}
+.main .nav .btns .btn2{
+	top: 0px;
+	transform: rotateZ(45deg) translate(0px,0px);
+}
+.main .nav .btns .btn3{
+	top: -6px;
+	transform: rotateZ(-45deg) translate(5px,-5px);
+}
+
+.bg_1{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/bg_1.jpg)no-repeat;	
+}
+@media all and (max-width: 600px) {
+	.main{
+		background-color: #44cef6;
+	}
+	h1{
+		display: none;
+	}
+	.nav{
+		right: -100px;
+		width: 100px;
+		height: 100vh;
+		background-color: #177cb0;
+	}
+	.tab_ul{
+		width: 100px;
+		height: 200px;
+		position: relative;
+		top: 50%;
+		transform: translate(0,-50%);
+		display: flex;
+		flex-direction: column;
+	}
+	.main .nav .btns{
+		transform: translate(-50%,50%);
+	}
+	.main .nav .btns div{
+		opacity: 1;
+	}
+}
