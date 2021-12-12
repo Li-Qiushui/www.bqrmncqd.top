@@ -1,5 +1,44 @@
 *{
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	transition: .4s;
+}
+.main{
 	
+}
+.header{
+	width: 100%;
+	height: 100vh;
+}
+.header .nav_w{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.nav_w .nav_r ul{
+	display: flex;
+	position: relative;
+}
+.nav_w .nav_r ul li{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+}
+.nav_w .nav_r ul li:hover a{
+	color: #FFF;
+}
+.nav_w .nav_r ul li a{
+	color: #000;
+	line-height: 30px;
+}
+.nav_w .nav_r ul .li_bgc{
+	border-radius: 5px;
+	background-color: #000000;
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	opacity: 0;
 }
