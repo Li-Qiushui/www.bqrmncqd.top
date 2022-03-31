@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	 -webkit-tag-highlight-color: transparent;
+	 -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	 -webkit-user-select: none;
+	 -moz-user-focus: none;
+	 -moz-user-select: none;
+}
+body{
+	overflow: hidden;
+	background: url(../img/bg1.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+body::after{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(231, 153, 176,.8);
+}
+.down_w{
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.down_w .down{
+	width: 40px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.down_w .down_01{
+	animation: down 1.2s ease-in-out infinite;
+}
+.down_w .down_02{
+	transform: scale(.95);
+	animation: down 1.2s .1s ease-in-out infinite;
+}
+.down_w .down div{
+	width: 20px;
+	height: 2px;
+	background-color: rgb(0, 0, 0);	
+}
+.down_w .down div:nth-child(1){
+	transform: rotateZ(33deg) translateX(2px);
+}
+.down_w .down div:nth-child(2){
+	transform: rotateZ(-33deg) translateX(-2px);
+}
+@keyframes down{
+	0%{
+		opacity: .1;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: .1;
+	}
+}
+
+
+.main{
+	width: 100vw;
+	height: 100vh;
+	padding: 0 15px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.header_w{
+	position: relative;
+	z-index: 9;
+	width: 100%;
+	height: 100vh;
+	padding-top: 20%;
+}
+.header_w h1{
+	color: #FFF;
+	font-size: 9vw;
+	text-align: center;
+}
+.header_w h2{
+	color: #FFF;
+	font-size: 6vw;
+	text-align: center;
+}
+
+.Diana_01{
+	position: relative;
+	z-index: 9;
+	max-width: 888px;
+	height: 100vh;
+	margin: 0 auto;
+}
+.Diana_info{
+	display: flex;
+}
+.Diana_info .avatar{
+	width: 91px;
+	height: 91px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.Diana_info .avatar:hover img{
+	transform: scale(1.1);
+}
+.Diana_info .avatar img{
+	transition: .3s;
+	width: 100%;
+}
+.Diana_info .name{
+	
+}
+.Diana_info .name h2{
+	font-size: 38px;
+	color: rgb(222, 82, 84);
+}
+.Diana_info .name h3{
+	font-size: 32px;
+	color: rgb(255, 255, 255);
+}
+
+.Diana_row{
+	width: 100%;
+	height: 280px;
+	display: flex;
+	justify-content: space-between;
+}
+.Diana_links{
+	width: 50%;
+}
+.Diana_links .link{
+	cursor: pointer;
+	transition: .3s;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 80px;
+	padding: 16px 10px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+.Diana_links .link:hover{
+	transform: scale(1.05);
+}
+.Diana_links .link:nth-child(1){
+	background-color: rgb(0, 161, 214);
+	color: #FFF;
+}
+.Diana_links .link:nth-child(2){
+	background-color: rgb(0, 0, 0);
+	color: #FFF;
+}
+.Diana_links .link:nth-child(3){
+	background-color: rgb(254, 249, 249);
+	color: #000;
+}
+.Diana_links .link_img{
+	width: 48px;
+	height: 48px;
+}
+.Diana_links .link_img img{
+	width: 100%;
+}
+.Diana_links .link_txt p{
+	text-align: right;
+	font-size: 18px;
+}
+.Diana_Intro{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+}
+.Diana_Intro p{
+	position: relative;
+	left: 0;
+	cursor: pointer;
+	transition: .3s;
+	width: 100%;
+	border-radius: 5px;
+	background-color: rgba(222, 82, 84,.5);
+	font-weight: 400;
+	line-height: 40px;
+	text-indent: 15px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color: #FFF;
+}
+.Diana_Intro p:hover{
+	background-color: rgba(222, 82, 84,.9);
+	width: 200%;
+	position: relative;
+	left: -100%;
+}
+.Diana_pic{
+	max-width: 450px;
+	height: calc(100vh - 370px);
+	margin: 0 auto;
+	overflow: hidden;
+}
+.Diana_pic img{
+	width: 100%;
+}
+
+.Diana_02{
+	position: relative;
+	z-index: 9;
+	max-width: 888px;
+	height: 100vh;
+	padding-top: 20%;
+	margin: 0 auto;
+}
+.Diana_02 .text{
+	margin: 30px 0;
+	color: #FFF;
+	text-align: center;
+}
+.Diana_02 .text h2{
+	font-size: 28px;
+}
+.Diana_02 .text h3{
+	font-size: 20px;
+}
+
+.Diana_03{
+	position: relative;
+	z-index: 9;
+	max-width: 888px;
+	height: 100vh;
+	margin: 0 auto;
+}
+.Diana_03 .text{
+	margin: 30px 0;
+	color: #FFF;
+	text-align: center;
+}
+.Diana_03 .text h2{
+	font-size: 28px;
+}
+.Diana_03 .text h3{
+	font-size: 20px;
+}
+.Diana_03 .text:last-child h2{
+	font-size: 42px;
+	font-family: "仿宋";
+}
+.Diana_03 .text:last-child h3{
+	font-size: 30px;
+	font-family: "仿宋";
+}
+
+.Diana_04{
+	position: relative;
+	z-index: 9;
+	max-width: 888px;
+	height: 100vh;
+	padding-top: 20px;
+	margin: 0 auto;
+}
